@@ -11,10 +11,6 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Logo size="medium" />
-        
-        <SearchBar />
-        
         <div className="nav-menu-container">
           <div className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
             <span></span>
@@ -37,6 +33,8 @@ const Navbar = () => {
             </li>
           </ul>
           
+          <SearchBar />
+          
           <div className="nav-actions">
             <Link to="/login" className="nav-icon login-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -53,6 +51,10 @@ const Navbar = () => {
               <span className="cart-count">0</span>
             </Link>
           </div>
+        </div>
+        
+        <div className="logo-container">
+          <Logo size="medium" />
         </div>
       </div>
     </nav>

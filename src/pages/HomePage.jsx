@@ -4,13 +4,11 @@ import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import '../styles/HomePage.css';
 
-// Sample featured products - replace with actual data in a real app
 const featuredProducts = [
   {
     id: 1,
     name: 'Sumatra Dark Roast',
     price: 16.99,
-    image: '',
     description: 'Bold, earthy flavors with low acidity and a smooth finish.',
     inStock: true
   },
@@ -18,7 +16,6 @@ const featuredProducts = [
     id: 2,
     name: 'Ethiopia Light Roast',
     price: 18.99,
-    image: '',
     description: 'Bright and fruity with notes of blueberry and citrus.',
     inStock: true
   },
@@ -26,7 +23,6 @@ const featuredProducts = [
     id: 3,
     name: 'Colombia Medium Roast',
     price: 15.99,
-    image: '',
     description: 'Sweet caramel notes with a hint of nuttiness and cocoa.',
     inStock: false
   },
@@ -34,7 +30,6 @@ const featuredProducts = [
     id: 4,
     name: 'Driftmood Espresso Blend',
     price: 17.99,
-    image: '',
     description: 'Rich, full-bodied blend perfect for espresso machines.',
     inStock: true
   }
@@ -94,19 +89,6 @@ const HomePage = () => {
           </div>
           <div className="view-all-link">
             <Link to="/products">View All Products</Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="about-section">
-        <div className="container">
-          <div className="about-content">
-            <div className="about-text">
-              <h2>Our Passion for Coffee</h2>
-              <p>At Driftmood Coffee, we believe that the perfect cup starts with the perfect bean. Our master roasters travel the world to find the highest quality, sustainably sourced coffee beans.</p>
-              <p>Each small batch is carefully roasted to bring out the unique character and flavor profile, resulting in a coffee experience like no other.</p>
-              <Link to="/about" className="button secondary">Learn More</Link>
-            </div>
           </div>
         </div>
       </section>

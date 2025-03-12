@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/LoginPage.css';
-import Logo from '../components/Logo';
 
 const LoginPage = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -56,7 +55,6 @@ const LoginPage = () => {
     
     if (validateForm()) {
       console.log('Form is valid:', formData);
-      // Here you would typically make an API call to authenticate the user
       if (isLogin) {
         console.log('Logging in user with:', formData.email);
       } else {
@@ -73,15 +71,7 @@ const LoginPage = () => {
   return (
     <div className="login-page">
       <div className="auth-container">
-        <div className="auth-header">
-          <Logo size="medium" />
-          <h2>{isLogin ? 'Welcome Back' : 'Create an Account'}</h2>
-          <p>
-            {isLogin 
-              ? 'Sign in to access your account and continue your coffee journey.' 
-              : 'Join Driftmood Coffee and discover the world of premium coffee.'}
-          </p>
-        </div>
+        <h2>{isLogin ? 'Sign In' : 'Create Account'}</h2>
         
         <form onSubmit={handleSubmit} className="auth-form">
           {!isLogin && (
@@ -152,14 +142,6 @@ const LoginPage = () => {
           
           <button type="submit" className="auth-button">
             {isLogin ? 'Sign In' : 'Create Account'}
-          </button>
-          
-          <div className="auth-divider">
-            <span>OR</span>
-          </div>
-          
-          <button type="button" className="social-auth-button">
-            Continue with Google
           </button>
           
           <div className="toggle-auth-mode">
