@@ -4,19 +4,16 @@ import { Link } from 'react-router-dom';
 import '../styles/ProductCard.css';
 
 const ProductCard = ({ product }) => {
-  const { id, name, price, image, description, inStock } = product;
+  const { id, name, price, description, inStock } = product;
 
   return (
     <div className={`product-card ${!inStock ? 'out-of-stock' : ''}`}>
       <Link to={`/product/${id}`}>
-        <div className="product-image">
-          <img src={image} alt={name} />
-          {!inStock && <div className="out-of-stock-badge">Out of Stock</div>}
-        </div>
         <div className="product-info">
           <h3 className="product-name">{name}</h3>
           <p className="product-description">{description}</p>
           <div className="product-price">${price.toFixed(2)}</div>
+          {!inStock && <div className="out-of-stock-label">Out of Stock</div>}
         </div>
       </Link>
       <button 

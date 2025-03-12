@@ -10,7 +10,7 @@ const featuredProducts = [
     id: 1,
     name: 'Sumatra Dark Roast',
     price: 16.99,
-    image: 'https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: '',
     description: 'Bold, earthy flavors with low acidity and a smooth finish.',
     inStock: true
   },
@@ -18,7 +18,7 @@ const featuredProducts = [
     id: 2,
     name: 'Ethiopia Light Roast',
     price: 18.99,
-    image: 'https://images.unsplash.com/photo-1580933073521-dc51f22e6b72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: '',
     description: 'Bright and fruity with notes of blueberry and citrus.',
     inStock: true
   },
@@ -26,7 +26,7 @@ const featuredProducts = [
     id: 3,
     name: 'Colombia Medium Roast',
     price: 15.99,
-    image: 'https://images.unsplash.com/photo-1598908314732-07113901949e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: '',
     description: 'Sweet caramel notes with a hint of nuttiness and cocoa.',
     inStock: false
   },
@@ -34,7 +34,7 @@ const featuredProducts = [
     id: 4,
     name: 'Driftmood Espresso Blend',
     price: 17.99,
-    image: 'https://images.unsplash.com/photo-1565600424568-8a868bb1ee25?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: '',
     description: 'Rich, full-bodied blend perfect for espresso machines.',
     inStock: true
   }
@@ -61,28 +61,24 @@ const HomePage = () => {
           <h2 className="section-title">Shop by Category</h2>
           <div className="categories-grid">
             <Link to="/products/coffee-beans" className="category-card">
-              <div className="category-image">
-                <img src="https://images.unsplash.com/photo-1621784562807-371034596d3c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Coffee Beans" />
+              <div className="category-name">
+                <h3>Coffee Beans</h3>
               </div>
-              <h3>Coffee Beans</h3>
             </Link>
             <Link to="/products/brewing-equipment" className="category-card">
-              <div className="category-image">
-                <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Brewing Equipment" />
+              <div className="category-name">
+                <h3>Brewing Equipment</h3>
               </div>
-              <h3>Brewing Equipment</h3>
             </Link>
             <Link to="/products/accessories" className="category-card">
-              <div className="category-image">
-                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Accessories" />
+              <div className="category-name">
+                <h3>Accessories</h3>
               </div>
-              <h3>Accessories</h3>
             </Link>
             <Link to="/products/gifts" className="category-card">
-              <div className="category-image">
-                <img src="https://images.unsplash.com/photo-1606791405792-1004f1d5e60a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gift Sets" />
+              <div className="category-name">
+                <h3>Gift Sets</h3>
               </div>
-              <h3>Gift Sets</h3>
             </Link>
           </div>
         </div>
@@ -105,9 +101,6 @@ const HomePage = () => {
       <section className="about-section">
         <div className="container">
           <div className="about-content">
-            <div className="about-image">
-              <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="About Driftmood Coffee" />
-            </div>
             <div className="about-text">
               <h2>Our Passion for Coffee</h2>
               <p>At Driftmood Coffee, we believe that the perfect cup starts with the perfect bean. Our master roasters travel the world to find the highest quality, sustainably sourced coffee beans.</p>
