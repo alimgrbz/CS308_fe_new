@@ -11,6 +11,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
+        <div className="logo-container">
+          <Logo size="medium" />
+        </div>
+        
         <div className="nav-menu-container">
           <div className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
             <span></span>
@@ -51,10 +55,6 @@ const Navbar = () => {
               <span className="cart-count">0</span>
             </Link>
           </div>
-        </div>
-        
-        <div className="logo-container">
-          <Logo size="medium" />
         </div>
       </div>
     </nav>

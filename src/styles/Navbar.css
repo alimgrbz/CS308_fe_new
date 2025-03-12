@@ -19,15 +19,17 @@
 }
 
 .logo-container {
-  position: absolute;
-  right: 20px;
+  position: relative;
+  left: 0;
   top: 0;
 }
 
 .nav-menu-container {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex: 1;
+  margin-left: 20px;
 }
 
 .nav-menu {
@@ -135,10 +137,5 @@
 
   .nav-item {
     margin: 10px 0;
-  }
-  
-  .logo-container {
-    position: static;
-    margin-left: auto;
   }
 }

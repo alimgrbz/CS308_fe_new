@@ -2,23 +2,31 @@
 .logo {
   display: flex;
   align-items: center;
-  font-family: 'Playfair Display', serif;
-  color: var(--forest-green);
 }
 
-.logo h1 {
-  margin: 0;
-  font-weight: 700;
+.logo-image {
+  max-height: 100px;
+  width: auto;
 }
 
-.logo-small h1 {
-  font-size: 1.2rem;
+.logo-small .logo-image {
+  max-height: 60px;
 }
 
-.logo-medium h1 {
-  font-size: 1.8rem;
+.logo-medium .logo-image {
+  max-height: 100px;
 }
 
-.logo-large h1 {
-  font-size: 2.5rem;
+.logo-large .logo-image {
+  max-height: 140px;
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    max-height: 80px;
+  }
+  
+  .logo-medium .logo-image {
+    max-height: 80px;
+  }
 }

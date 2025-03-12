@@ -54,7 +54,6 @@ const LoginPage = () => {
     e.preventDefault();
     
     if (validateForm()) {
-      console.log('Form is valid:', formData);
       if (isLogin) {
         console.log('Logging in user with:', formData.email);
       } else {
