@@ -37,7 +37,33 @@ const featuredProducts = [
 const HomePage = () => {
   return (
     <div className="home-page">
-      
+      <section className="categories-section">
+        <div className="container">
+          <h2 className="section-title">Shop by Category</h2>
+          <div className="categories-grid">
+            <Link to="/products/coffee-beans" className="category-card">
+              <div className="category-name">
+                <h3>Coffee Beans</h3>
+              </div>
+            </Link>
+            <Link to="/products/brewing-equipment" className="category-card">
+              <div className="category-name">
+                <h3>Brewing Equipment</h3>
+              </div>
+            </Link>
+            <Link to="/products/accessories" className="category-card">
+              <div className="category-name">
+                <h3>Accessories</h3>
+              </div>
+            </Link>
+            <Link to="/products/gifts" className="category-card">
+              <div className="category-name">
+                <h3>Gift Sets</h3>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <section className="featured-products-section">
         <div className="container">
@@ -53,7 +79,15 @@ const HomePage = () => {
         </div>
       </section>
 
-     
+      <section className="subscription-section">
+        <div className="container">
+          <div className="subscription-content">
+            <h2>Never Run Out of Great Coffee</h2>
+            <p>Join our subscription service and receive freshly roasted coffee at your doorstep as often as you'd like.</p>
+            <Link to="/subscriptions" className="button">Start Your Subscription</Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
