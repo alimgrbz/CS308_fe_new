@@ -6,7 +6,7 @@ const Logo = ({ size = 'medium' }) => {
   return (
     <Link to="/" className={`logo logo-${size}`}>
       <img 
-        src="/logo.png" 
+        src="/lovable-uploads/logo.png" 
         alt="DriftMood Coffee" 
         className="logo-image"
       />
