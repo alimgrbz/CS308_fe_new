@@ -5,11 +5,9 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingCart, ChevronLeft, AlertCircle } from 'lucide-react';
 import { toast } from 'sonner';
-import Navbar from '@/components/Navbar';
 import CartItem from '@/components/CartItem';
 import CartSummary from '@/components/CartSummary';
 import { ButtonCustom } from '@/components/ui/button-custom';
-
 // Mock data for initial cart items - these will be replaced with localStorage items
 const initialCartItems = [
   {
@@ -217,7 +215,6 @@ const Cart = () => {
 
   return (
     <>
-      <Navbar />
       <div className="container mx-auto px-4 md:px-6 py-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
