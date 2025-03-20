@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
@@ -38,19 +37,6 @@ const featuredProducts = [
 const HomePage = () => {
   return (
     <div className="home-page">
-      <section className="hero-section">
-        <div className="container">
-          <div className="hero-content">
-            <h1>Experience Coffee in Every Sip</h1>
-            <p>Artisanal coffee roasted to perfection, delivered to your doorstep.</p>
-            <div className="hero-buttons">
-              <Link to="/products" className="button">Shop Now</Link>
-              <Link to="/about" className="button secondary">Our Story</Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="categories-section">
         <div className="container">
           <h2 className="section-title">Shop by Category</h2>
@@ -89,32 +75,6 @@ const HomePage = () => {
           </div>
           <div className="view-all-link">
             <Link to="/products">View All Products</Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="testimonials-section">
-        <div className="container">
-          <h2 className="section-title">What Our Customers Say</h2>
-          <div className="testimonials-grid">
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>"The Sumatra Dark Roast is absolutely incredible. Rich, complex flavor that makes my morning something to look forward to."</p>
-                <div className="testimonial-author">- Sarah J.</div>
-              </div>
-            </div>
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>"I've tried coffee from all over, but Driftmood's Ethiopia Light Roast stands out. The fruity notes are so vibrant!"</p>
-                <div className="testimonial-author">- Michael T.</div>
-              </div>
-            </div>
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>"Their subscription service is a game-changer. Fresh coffee delivered right when I need it, and I've discovered so many new favorites."</p>
-                <div className="testimonial-author">- Emma R.</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
